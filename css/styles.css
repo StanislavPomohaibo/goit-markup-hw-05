@@ -44,6 +44,7 @@ header .header_container {
 
 header .logo {
     margin-right: 93px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
  header .logo:hover {
@@ -66,6 +67,42 @@ header .logo {
     margin-right: 50px;
 }
 
+header .header_navigation a {
+    position: relative;
+    display: inline-block;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header .header_navigation a::after {
+    content: '';
+    position: absolute;
+    display: none;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: -30px;
+    background-color: #2196F3;
+    border-radius: 2px;
+    transform: 250ms;
+}
+
+header .header_navigation .link.current::after {
+    content: '';
+        position: absolute;
+        display: block;
+        height: 4px;
+        width: 100%;
+        left: 0;
+        bottom: -30px;
+        background-color: #2196F3;
+        border-radius: 2px;
+        transform: 250ms;
+}
+
+header .header_navigation .link.current {
+    color: #2196F3;
+}
+
 header a {
     color: #212121;
     text-decoration: none;
@@ -75,10 +112,15 @@ header a {
     letter-spacing: 0.02em;
     display: flex;
     align-items: flex-end;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 header a:hover {
     color: #2196F3;
+}
+
+.header .header_contacts span::before {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header a:hover .icon-envelope:before {
@@ -156,6 +198,7 @@ section h2 {
     line-height: 1.88em;
     font-weight: 700;
     color: #FFFFFF;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main_item button:hover {
@@ -240,6 +283,10 @@ section h2 {
     color: #757575;
 }
 
+.our_team_column_content .our_team_links span::before {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .our_team_links a {
     display: block;
     height: 44px;
@@ -247,6 +294,7 @@ section h2 {
     padding: 12px;
     border: none;
     border-radius: 50%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our_team_links a:hover {
@@ -255,13 +303,16 @@ section h2 {
     cursor: pointer;
 }
 
+.our_team_links span::before {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .our_team_links a:focus {
     background-color: #2196F3;
 }
 
 .our_team_links a:hover span::before  {
     color: white;
-    transition: 0.5s;
 }
 
 .our_team_links a:focus span::before {
@@ -301,6 +352,11 @@ section h2 {
     height: 92px;
     line-height: 1;
     padding: 20px 0 15px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular_customers_links span::before {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular_customers .regular_customers_links .third-link {
@@ -325,7 +381,6 @@ section h2 {
 
 .regular_customers_links a:hover span::before {
     color: #2196F3;
-    transition: 0.5s;
 }
 
 .regular_customers_links a:focus span::before {
@@ -358,6 +413,7 @@ section h2 {
     letter-spacing: 0.03em;
     padding: 0 22px;
     border: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio_button:hover {
@@ -385,6 +441,7 @@ section h2 {
 
 .portfolio_card {
     background: #FFFFFF;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio_card:hover {
@@ -432,6 +489,7 @@ footer {
 .footer_section .logo {
     color: #FFFFFF;
     text-decoration: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_section .logo:hover {
@@ -449,6 +507,10 @@ footer {
 
 .footer_adress .fst_link {
     color: #FFFFFF;
+}
+
+address a {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 address a:hover {
@@ -491,18 +553,18 @@ address a:hover {
     height: 44px;
     text-align: center;
     font-size: 20px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_section .footer-socials span::before {
     color: #FFFFFF;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_section .footer-socials a:hover {
     background-color: #2196F3;
-    transition: 00.5s;
 }
 
 .footer_section .footer-socials a:focus {
     background-color: #2196F3;
-    transition: 00.5s;
 }
