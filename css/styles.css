@@ -628,10 +628,14 @@ address a:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     overflow: auto;
+    transition: opacity 250ms, visibility 250ms;
+    opacity: 1;
+    visibility: visible;
 }
 
 .is-hidden {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .backdrop .modal-content {
@@ -640,8 +644,6 @@ address a:hover {
     border-radius: 4px;
     width: 528px;
     height: 581px;
-    transition: 250ms;
-    transition-delay: 100ms;
 }
 
 .backdrop .modal-content button {
