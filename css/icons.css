@@ -273,6 +273,11 @@
     color: #afb1b8;
 }
 
+.icon-cross:before {
+    content: "\ea0f";
+    color: #000;
+}
+
 .icon-Vector:before {
     content: "\e90b";
     color: #757575;

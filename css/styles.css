@@ -491,6 +491,14 @@ section h2 {
     transform: translateY(0%);
 }
 
+.portfolio_card .thumb-anim {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
+
 .portfolio_card_content {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
@@ -502,7 +510,7 @@ section h2 {
     font-weight: 700;
 }
 
-.portfolio_card p {
+.portfolio_card_content p {
     color: #757575;
     font-size: 16px;
     font-weight: 400;
@@ -606,14 +614,45 @@ address a:hover {
 }
 
 .backdrop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    overflow: auto;
 }
 
 .is-hidden {
     display: none;
+}
+
+.backdrop .modal-content {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 30%;
+    height: 581px;
+}
+
+.backdrop .modal-content button {
+    float: right;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 6px 6px 0 0;
+    padding: 8px 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.backdrop .modal-content button:hover {
+    cursor: pointer;
 }
