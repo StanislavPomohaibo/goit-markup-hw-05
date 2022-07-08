@@ -38,9 +38,6 @@
                     <button type="button" class="main_item_button" data-modal-open>Заказать услугу</button>
                     </div>
                 </div>
-                <!-- <div class="backdrop is-hidden" data-modal>
-                    <button class="buttton">Закрыть</button>
-                </div> -->
             </section>
             <section class="why_me section">
                 <div class="container">
@@ -116,23 +113,26 @@
                 <div class="container">
                 <h2>Чем мы занимаемся</h2>
                 <ul class="list">
-                    <li>
+                    <li class="thumb">
                         <img class="about_us_Img" 
                         src="images/aboutUs1.jpg"
                         alt="Блок схема" 
                         width="200">
+                        <p class="label">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                     </li>
-                    <li>
+                    <li class="thumb">
                         <img class="about_us_img" 
                         src="images/aboutUs2.jpg"
                         alt="Телефон" 
                         width="200">
+                        <p class="label">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                     </li>
-                    <li>
+                    <li class="thumb">
                         <img class="about_us_img" 
                         src="images/aboutUs3.jpg" 
                         alt="Планшет"
                         width="200">
+                        <p class="label">ДИИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                     </li>
                 </ul>
                 </div>
@@ -233,6 +233,9 @@
                     </div>
                 </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <button class="buttton" data-modal-close>Закрыть</button>
+        </div>
         <script src="./js/modal.js"></script>
     </body>
 </html>
